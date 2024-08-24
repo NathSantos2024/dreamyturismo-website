@@ -167,9 +167,9 @@ nav ul li a:hover {
 }
 
 .video-element {
-    max-width: 800px; /* Define um valor máximo para a largura do vídeo */
-    display: block; /* Centraliza o vídeo na tela */
-    margin: 0 auto; /* Centraliza o vídeo na tela */
+    max-width: 800px; 
+    display: block; 
+    margin: 0 auto; 
     height: 475px;
 }
 
@@ -307,21 +307,24 @@ footer {
 /* Media Queries */
 
 /* Para dispositivos móveis (smartphones) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     header img {
-        width: 80px;
-        height: 80px;
-        margin: 0;
+        margin: 10px 0;
     }
 
     header nav ul {
         flex-direction: column;
+        margin: 10px 0;
+    }
+
+    header h1 {
         margin: 10px 0;
     }
 
@@ -333,15 +336,25 @@ footer {
     #banner {
         padding: 20px;
         font-size: 16px;
+        margin-top: 230px;
     }
 
     .destinos ul {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .destinos li {
+        margin: 10px; 
     }
 
     .destinos img {
         width: 100%;
-        padding: 5px 0;
+        max-width: 200px; 
+        height: auto;
+        padding: 5px;
     }
 
     #home {
@@ -363,10 +376,17 @@ footer {
         font-size: 16px;
     }
 
+    #qsomos a.btn {
+        display: block;
+        margin: 20px auto; 
+        text-align: center;
+    }
+
     #nservicos {
         flex-direction: column;
         margin-left: 5%;
         margin-right: 5%;
+        scroll-margin-top: 240px;
     }
 
     #servicos {
@@ -390,6 +410,7 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
         padding: 20px 0;
+        scroll-margin-top: 240px;
     }
 
     .contatos-wrapper {
@@ -411,8 +432,8 @@ footer {
     }
 }
 
-/* Para tablets (entre 601px e 900px) */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+/* Para tablets (entre 769px e 900px) */
+@media only screen and (min-width: 769px) and (max-width: 900px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -469,6 +490,12 @@ footer {
         font-size: 17px;
     }
 
+    #qsomos a.btn {
+        display: block;
+        margin: 20px auto; 
+        text-align: center;
+    }
+
     #nservicos {
         flex-direction: column;
         margin-left: 10%;
@@ -517,7 +544,38 @@ footer {
     }
 }
 
-/* Para dispositivos grandes (desktops e maiores) */
-@media only screen and (min-width: 901px) {
+/* Para dispositivos (entre 1024px e 1440px) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {  
+    #banner, footer {
+        width: 100%;
+    }
 
+    header img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    .destinos img {
+        width: 175px; 
+        padding: 5px 15px 0px 15px;
+    }
+
+    #home {
+        gap: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #qsomos a.btn {
+        display: block;
+        margin: 20px auto; 
+        text-align: center;
+    }
+
+    #reloca img {
+        width: 130%;
+    }
 }
