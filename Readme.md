@@ -35,4 +35,4 @@ Para mais informações, entre em contato comigo:
 [Github](https://github.com/NathSantos2024)
 [Discord](https://discord.gg/s5cQJqe4)
 
-[Site DreamyTurismo](https://nathsantos2024.github.io/Site_Dreamyturismo)
+[Site DreamyTurismo](https://nathsantos2024.github.io/dreamyturismo-website/)
