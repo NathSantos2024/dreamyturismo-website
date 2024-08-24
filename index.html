@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathalia Santos">
+    <title>DreamyTurismo - Rumo aos seus Sonhos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+            <h1>DreamyTurismo</h1>
+            <img src="./dreamyturismo.png" alt="logo DreamyTurismo">
+            <nav>  
+                <ul>
+                    <li><a href="#nservicos">Serviços</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav> 
+    </header>
+
+    <section id="banner">
+            <h3>Descubra o Mundo com a DreamyTurismo</h3>
+            <p>Planeje sua próxima viagem conosco!</p>           
+    </section>
+
+    <div class="destinos">  
+        <ul>
+            <li><img src="img/franca1.jpg" alt="França"></li>
+            <li><img src="img/italia1.jpg" alt="Itália"></li>
+            <li><img src="img/portugal1.jpg" alt="Portugal"></li>
+            <li><img src="img/franca2.jpg" alt="França"></li>
+            <li><img src="img/portugal2.jpg" alt="Portugal"></li>
+            <li><img src="img/italia4.jpg" alt="Itália"></li>
+            <li><img src="img/portugal5.jpg" alt="Portugal"></li>
+        </ul>
+    </div>  
+
+    <section id="home">
+
+        <div id="videos">           
+                <div class="video-container">
+                    <video id="video" class="video-element" controls>
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+            <div class="controls">
+                <button class="prev-btn" onclick="prevVideo()">Anterior</button>
+                <button class="next-btn" onclick="nextVideo()">Próximo</button>
+            </div>
+        </div>        
+        
+        <div id="qsomos">
+            <h2>Quem Somos</h2>
+            <p>Na DreamyTurismo, oferecemos mais do que simplesmente uma viagem. Somos uma agência 
+            comprometida em transformar seus sonhos em realidade, proporcionando experiências de viagem 
+            memoráveis e inesquecíveis. <br>
+            Nossa equipe dedicada não apenas vende passagens, mas também se orgulha dos relatos de clientes 
+            satisfeitos com nosso trabalho de assessoria. Cada viagem é planejada e acompanhada até o seu destino, 
+            garantindo que você desfrute de momentos únicos e autênticos sem preocupações.<br>
+            Além disso, nossa agência é reconhecida por sua integridade e compromisso com a segurança de nossos clientes. 
+            Somos completamente corretos e legalizados, devidamente cadastrados na Cadastur, garantindo que suas viagens 
+            sejam realizadas com total tranquilidade e confiança.<br>
+            Na DreamyTurismo, sua satisfação e felicidade são nossa maior prioridade.</p>
+            <a target="_blank" href="CADASTUR.pdf" class="btn">CADASTUR</a>
+        </div>
+    </section>
+            
+    <section id="nservicos">
+        <div id="servicos">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma ampla gama de serviços, incluindo:</p>
+            <ul>
+                <li>Passagens aéreas</li>
+                <li>Pacotes de Passagem + Hotel</li>
+                <li>Seguro Viagem</li>
+                <li>Combos de Passagem + Hotel + Seguro</li>
+                <li>Acompanhamento completo durante toda a sua viagem</li>
+                <li>E muito mais...</li>
+            </ul>
+            <br>
+            <p>Na DreamyTurismo, oferecemos uma assessoria completa para garantir a aprovação do seu visto de procura de trabalho, com uma taxa de sucesso de 100%.</p>
+            <p>Além disso, oferecemos um serviço de Relocation, para que você já chegue ao seu novo lar com tudo preparado!</p>
+        </div>
+
+        <div id="reloca">
+            <img src="img/assessoria.png" alt="Assessoria">
+        </div>
+    </section>
+
+    <section id="contatos">
+        <div class="contatos-wrapper">
+            <div class="contatos-content">
+                <section class="instagram">
+                    <h2>Siga-nos no Instagram</h2>
+                     <a href="https://www.instagram.com/dreamyturismo?igsh=MTI2cDJtY2RieHNndw==" target="_blank" class="btn-instagram">Seguir</a>
+                 </section>
+
+                <section class="whatsapp">
+                <h2>Entre em Contato no WhatsApp</h2>
+                <p>Estamos disponíveis para ajudar a tornar o seu sonho em realidade!</p>
+                <a href="https://wa.me/4899514054" target="_blank" class="btn-whatsapp">Enviar Mensagem</a>
+                </section>
+            </div>
+            <div class="dreamyturismo">
+                <img src="img/dreamyturismo.png" alt="DreamyTurismo">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+            <p>&copy; 2024 DreamyTurismo. Todos os direitos reservados.</p>
+
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
